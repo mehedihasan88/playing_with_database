@@ -74,4 +74,17 @@ select concat(c.first_name," ",c.last_name) as name, o.order_id from customers c
 -- queries above return same result
 
 
+
+-- Date Data Type in MySQL
+/*
+MySQL comes with the following data types for storing a date or a date/time value in the database:
+DATE - format YYYY-MM-DD
+DATETIME - format: YYYY-MM-DD HH:MI:SS
+TIMESTAMP - format: YYYY-MM-DD HH:MI:SS
+YEAR - format YYYY or YY
+*/
+select * from orders where order_date = "2018-9-22"; -- "2018-09-22" provides same result
+select * from orders where order_date regexp "^2018"; -- can use regexp
+
+
 -- https://www.youtube.com/watch?v=7S_tz1z_5bA&t=5102s (not finished watching)
